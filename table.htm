@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marksheet</title>
+</head>
+<style>
+  table{
+    height: 25px;
+    width: 100px;
+  }
+table, th, td {
+  border:1px solid black;
+  border-spacing: 0px;
+  text-align: center;
+
+}
+.c{
+  background: skyblue;
+}
+.a{
+  background: yellow;
+}
+.g{
+  background: seagreen;
+  margin-right: 80%;
+}
+</style>
+<body>
+
+<h1 align="center">Marksheet</h1>
+
+
+<table style="width:100%">
+  <tr class="c">
+    <th>Sr.No</th>
+    <th>Subject</th>
+    <th>Total</th>
+    <th>Theory</th>
+    <th>Practical</th>
+    <th>Theory+Practical</th>
+
+  </tr>
+  <tr>
+    <td class="a">1.</td>
+    <td>Math</td>
+    <td>100</td>
+    <td id="math"></td>
+    <td></td>
+    <td id="math">55</td>
+  </tr>
+  <tr>
+    <td class="a">2.</td>
+    <td>English</td>
+    <td>100</td>
+    <td id="english"></td>
+    <td></td>
+    <td id="english"></td>
+  </tr>
+   <tr>
+    <td class="a">3.</td>
+    <td>Hindi</td>
+    <td>100</td>
+    <td id="hindi"></td>
+    <td></td>
+    <td id="hindi"></td>
+  </tr>
+   <tr>
+    <td class="a">4.</td>
+    <td>Science</td>
+    <td>100</td>
+    <td id="Sci"></td>
+    <td id="sci.Theory"></td>
+    <td id="st"></td>
+  </tr>
+   <tr>
+    <td class="a">5.</td>
+    <td>S.Science</td>
+    <td>100</td>
+    <td id="ss"></td>
+    <td id="sst"></td>
+    <td id="sstt"></td>
+
+  
+</table>
+<script type="text/javascript">
+  let a = parseInt(prompt("Enter Your Math Mark"))
+  document.getElementById('math').innerHTML=a;
+
+  //alert(a)
+
+  let b = parseInt(prompt("Enter Your English Mark"))
+  document.getElementById('english').innerHTML=b;
+  //alert(b)
+
+let c = parseInt(prompt("Enter Your Hindi Mark"))
+  document.getElementById('hindi').innerHTML=c;
+  //alert(c)
+
+  let d = parseInt(prompt("Enter Your Science Mark"))
+  document.getElementById('Sci').innerHTML=d;
+  //alert(d)
+
+  let e = parseInt(prompt("Enter Your Science Grade Mark"))
+  document.getElementById('sci.Theory').innerHTML=e;
+  alert(e)
+
+  let f = parseInt(prompt("Enter Your S.Science Mark"))
+  document.getElementById('ss').innerHTML=f;
+  //alert(f)
+
+let g = parseInt(prompt("Enter Your S.Science Grade Mark"))
+  document.getElementById('sst').innerHTML=g;
+  alert(a,b,c,d,e,f,g)
+
+  
+
+</script>
+
+<p>To understand the example better, we have added borders to the table.</p>
+
+</body>
+</html>
